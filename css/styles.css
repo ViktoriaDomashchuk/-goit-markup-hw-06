@@ -670,7 +670,7 @@ background-color: var(--accent-txt-cl);
 .register-form-wrap {
     position: relative;
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .register-form-wrap:last-child {
@@ -681,7 +681,6 @@ background-color: var(--accent-txt-cl);
     display: block;
     text-align: left;
     margin-bottom: 4px;
-    padding-left: 5px;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 1%;
@@ -699,14 +698,14 @@ background-color: var(--accent-txt-cl);
 }
 
 .register-form-message {
-    padding: 10px;
-    height: 90px;
+    padding: 12px 16px;
+    height: 120px;
     resize: none;
 }
 
 .register-form-icon {
     position: absolute;
-    bottom: 10px;
+    bottom: 11px;
     left: 15px;
 }
 .textarea::placeholder{
@@ -722,14 +721,13 @@ background-color: var(--accent-txt-cl);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 /*.register-checkbox:checked+.register-icon .register-icon-uncheck {
     opacity: 0;
     transition: opacity var(--anim-fast);
-}*/
+}
 .register-icon-check {
     opacity: 0;
     fill: var(--light-bg-cl);
@@ -738,7 +736,7 @@ background-color: var(--accent-txt-cl);
 
 .register-checkbox:checked+.register-icon .register-icon-check {
     opacity: 1;
-}
+}*/
 
 .register-form-agreement-text {
     font-size: 14px;
@@ -748,6 +746,14 @@ background-color: var(--accent-txt-cl);
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
 }
+
+.register-icon-uncheck{
+
+}
+.register-icon-check{
+    opacity: 0;
+}
+
 
 .register-form-btn {
     display: inline-flex;
