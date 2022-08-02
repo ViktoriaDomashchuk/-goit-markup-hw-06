@@ -562,15 +562,14 @@ justify-content: center;
 /*Footer-form*/
 .subscribe-wrap{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .subscribe-form{
-    margin-left: 93px;
-}
-.subscribe-group{
     display: flex;
     flex-direction: column;
+    margin-left: 93px;
+    margin-right: 10px;
 }
 .subscribe-input{
     width: 358px;
@@ -579,11 +578,42 @@ justify-content: center;
     background-color: transparent;
     color: var(--txt-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px, 4px rgba(0, 0, 0, 0.15);
 }
 .subscribe-btn{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height:50px;
+    padding: 10px 28px;
+    margin-left: 12px;
+    background-color: var(--accent-txt-cl);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px, 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--animation);
 }
-
+.subscribe-btn:hover, .subscribe-btn:focus{
+    background-color:#188CE8 ;
+}
+.subscribe-icon{
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: var(--light-bg-cl);
+}
+.subscribe-txt {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
+.subscribe-header{
+    margin-bottom: 20px;
+}
 /*Socials*/
 .socials.list{
 display: flex;
@@ -671,6 +701,11 @@ background-color: var(--accent-txt-cl);
     width: 18px;
     height: 18px;
     fill: currentColor;
+    transition: fill var(--animation);
+}
+.modal-btn-icon:hover, 
+.modal-btn-icon:focus{
+    fill: var(--accent-txt-cl);
 }
 /*Modal-form*/
 .register-form {
