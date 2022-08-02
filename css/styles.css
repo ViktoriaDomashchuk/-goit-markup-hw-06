@@ -732,18 +732,16 @@ background-color: var(--accent-txt-cl);
     height: 1px;
     clip: rect(0 0 0 0);
     overflow: hidden;
-    margin: -1px;
+    margin: -1px;        
 }
 .register-check-icon{
     width: 16px;
     height: 15px;
-    /*border: 2px solid #000000;
-    border-radius: 2px;
-    background-color: transparent;*/
     background-image:url(../images/icons/icon-border.svg);
     background-size: contain;
     background-origin: border-box;
     margin-right: 8px;
+    transition:background-image var(--animation) ;
 }
 .register-form-input-check:checked:focus + .register-check-icon{
     background-image:url(../images/icons/icon-check.svg);
