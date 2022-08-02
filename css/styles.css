@@ -524,7 +524,7 @@ justify-content: center;
 .footer-communication:focus {
     color: var(--txt-color);
 }
-.icons-header{
+.icons-header, .subscribe-header{
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
@@ -559,7 +559,30 @@ justify-content: center;
     background-color: var(--accent-txt-cl);
 }
 
-
+/*Footer-form*/
+.subscribe-wrap{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.subscribe-form{
+    margin-left: 93px;
+}
+.subscribe-group{
+    display: flex;
+    flex-direction: column;
+}
+.subscribe-input{
+    width: 358px;
+    border-radius: 4px;
+    padding: 15px 16px;
+    background-color: transparent;
+    color: var(--txt-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.subscribe-btn{
+    
+}
 
 /*Socials*/
 .socials.list{
