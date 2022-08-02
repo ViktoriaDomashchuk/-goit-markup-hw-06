@@ -526,11 +526,11 @@ justify-content: center;
 }
 .icons-header{
     font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--light-bg-cl);
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-bg-cl);
+    font-size: 14px;
 }
 .footer-list {
     display: flex;
