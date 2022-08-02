@@ -560,6 +560,7 @@ justify-content: center;
 }
 
 
+
 /*Socials*/
 .socials.list{
 display: flex;
@@ -718,25 +719,36 @@ background-color: var(--accent-txt-cl);
 }
 
 .register-form-agreement {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 }
 
-/*.register-checkbox:checked+.register-icon .register-icon-uncheck {
-    opacity: 0;
-    transition: opacity var(--anim-fast);
+.register-form-input-check{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    margin: -1px;
 }
-.register-icon-check {
-    opacity: 0;
-    fill: var(--light-bg-cl);
-    transition: opacity var(--anim-fast);
+.register-check-icon{
+    width: 16px;
+    height: 15px;
+    /*border: 2px solid #000000;
+    border-radius: 2px;
+    background-color: transparent;*/
+    background-image:url(../images/icons/icon-border.svg);
+    background-size: contain;
+    background-origin: border-box;
+    margin-right: 8px;
+}
+.register-form-input-check:checked:focus + .register-check-icon{
+    background-image:url(../images/icons/icon-check.svg);
 }
 
-.register-checkbox:checked+.register-icon .register-icon-check {
-    opacity: 1;
-}*/
 
 .register-form-agreement-text {
     font-size: 14px;
@@ -748,19 +760,6 @@ background-color: var(--accent-txt-cl);
 }
 .register-form-agreement-link{
     color: var(--accent-txt-cl);
-}
-
-.register-checkbox:checked+.register-icon .register-icon-uncheck{
-    opacity: 1;
-    transition: opacity var(--animation);
-   /* background-color: #2196F3;*/
-}
-.register-icon-check{ 
-    opacity: 0;
-    transition: opacity var(--animation);
-}
-.register-checkbox:checked+.register-icon .register-icon-check {
-    opacity: 1;
 }
 
 .register-form-btn {
