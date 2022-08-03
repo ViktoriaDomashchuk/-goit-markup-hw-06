@@ -754,6 +754,7 @@ background-color: var(--accent-txt-cl);
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline: transparent;
+    transition: border-color var(--animation);
 }
 
 .register-form-message {
@@ -766,6 +767,7 @@ background-color: var(--accent-txt-cl);
     position: absolute;
     bottom: 11px;
     left: 15px;
+    transition: fill var(--animation);
 }
 .textarea::placeholder{
     font-style: normal;
@@ -831,10 +833,31 @@ background-color: var(--accent-txt-cl);
     border-radius: 4px;
     cursor: pointer;
     border: none;
-    transition: box-shadow var(--animation) background-color var(--animation);
+    transition: box-shadow var(--animation), background-color var(--animation);
 }
 .register-form-btn:hover,
 .register-form-btn:focus{
     box-shadow: 0px, 4px rgba(0, 0, 0, 0.15); 
     background-color: #188CE8;
+}
+.register-form-input:focus, .register-form-message:focus{
+    border-color: var(--accent-txt-cl);
+}
+.register-form-input:focus+.register-form-label,.register-form-input:not(:placeholder-shown)+.register-form-label{
+    transform: translate(-30px, -30px);
+    color: var(--accent-txt-cl);
+}
+
+.register-form-input:focus~.register-form-icon,.register-form-input:not(:placeholder-shown)~.register-form-icon{
+    fill: var(--accent-txt-cl);
+}
+.register-form-input:not(:focus)~.register-form-icon{
+    fill: currentColor;
+}
+.register-form-input:placeholder-shown+.register-form-icon{
+    border-color: var(--accent-txt-cl);
+}
+.register-form-message:focus+.comment,.register-form-message:not(:placeholder-shown)+.comment{
+    transform: translate(-20px, -30px);
+    color: var(--accent-txt-cl);
 }
