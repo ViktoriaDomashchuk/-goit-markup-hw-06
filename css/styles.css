@@ -702,8 +702,8 @@ background-color: var(--accent-txt-cl);
     fill: currentColor;
     transition: fill var(--animation);
 }
-.modal-btn-icon:hover, 
-.modal-btn-icon:focus{
+.modal-btn:hover .modal-btn-icon, 
+.modal-btn:focus .modal-btn-icon{
     fill: var(--accent-txt-cl);
 }
 /*Modal-form*/
@@ -806,7 +806,6 @@ background-color: var(--accent-txt-cl);
     background-image:url(../images/icons/icon-check.svg);
 }
 
-
 .register-form-agreement-text {
     font-size: 14px;
     user-select: none;
@@ -834,6 +833,7 @@ background-color: var(--accent-txt-cl);
     border: none;
     transition: box-shadow var(--animation), background-color var(--animation);
 }
+
 .register-form-btn:hover,
 .register-form-btn:focus{
     box-shadow: 0px, 4px rgba(0, 0, 0, 0.15); 
