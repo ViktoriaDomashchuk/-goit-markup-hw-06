@@ -569,7 +569,6 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     margin-left: 93px;
-    margin-right: 10px;
 }
 .subscribe-input{
     width: 358px;
@@ -669,7 +668,7 @@ background-color: var(--accent-txt-cl);
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0);
     width: 528px;
-    min-height: 581px;
+    height: 581px;
     padding: 40px;
     background-color: #fff;
     border-radius: 4px;
