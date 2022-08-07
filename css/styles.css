@@ -568,7 +568,7 @@ justify-content: center;
 .subscribe-form{
     display: flex;
     flex-direction: column;
-    margin-left: 93px;
+    margin-left: auto;
 }
 .subscribe-input{
     width: 358px;
@@ -804,6 +804,9 @@ background-color: var(--accent-txt-cl);
 }
 .register-form-input-check:checked:focus + .register-check-icon{
     background-image:url(../images/icons/icon-check.svg);
+}
+.register-form-input-check:focus + span{
+    border: 1px solid var(--accent-txt-cl);
 }
 
 .register-form-agreement-text {
